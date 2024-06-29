@@ -1,0 +1,149 @@
+/* 
+* is for all elements in the document 
+How this works in case you forget is if there is an actual tag putting its name will apply the changes to all 
+elements inside it. # will select an id tag and apply those style changes to all elements in it. . is for 
+applying changes to a class.
+
+*/
+/* sets the margin of all the element to 10px on all sides and the background-color to black */
+body{
+  margin: 10px;
+  background-color: 
+  #28282B;
+}
+
+/* Home section  which has the app name and nav bar. The styling is applied by id */
+#home {
+  background-color:  #483355;
+  padding-bottom: 1cm;
+  margin-left:-1cm;
+  margin-right:-1cm;
+  margin-top:-1cm;
+  padding-top: 1.5cm;
+  padding-bottom: 2cm;
+}
+
+/* Application name inside the home section. The styling is applied by tag name */
+header {
+  font-size: 30px;
+  color: rgb(240, 234, 245);
+  float: left;
+  padding-left: 2cm;
+  margin-top: 1%; /*This is to make the unit conversions text go up or down */
+}
+
+/* Navigation Bar Container*/
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+  
+/* Navigation Bar Buttons */
+.navbutton {
+  color: lightgray;
+  background-color:   #483355;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration:none;
+  border-radius: 1mm;
+}
+  
+.navbutton:hover {
+  color: white;
+  font-weight: bolder;
+  background-color: #382742;
+  text-decoration: underline;
+}
+  
+/* Container for all the three conversion calculator sections   */
+#all-conversion-sections{
+  display: grid;
+  justify-content: center;
+}
+
+figure {
+  float:left; 
+  justify-self: auto; 
+  width:200px
+}
+
+img {
+  width: 200px;
+}
+
+figcaption {
+  color:black;
+  font-size: 17px;
+  text-align: center;
+}
+
+button{
+  font-size: 20px;
+  border: transparent;
+  width: fit-content;
+  background-color: rgba(120, 24, 171, 0.531);
+  border-radius: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* The calculator panel */
+.b{
+  border-top-style: solid;
+  background-color: white;
+  border-top-width: 20px;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.temperature{
+  border-top-color: blue;
+}
+
+.weight{
+  border-top-color: #8a2be2;
+}
+
+.distance{
+  border-top-color: purple;
+}
+
+legend {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/* Floating icon for the home button */
+.iconbutton{
+  width:40px;
+  height:40px;
+  border-radius: 100%;
+  background-color: rgb(225, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom:40px;
+  left:0;
+  margin-left: 1%;
+  margin-bottom: -1%;
+}
+
+.iconbutton img {
+  width:30px
+}
+    
+footer {
+  background-color:rgb(240, 234, 245);
+  margin-top: 20px;
+}
